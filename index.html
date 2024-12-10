@@ -7,31 +7,55 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Introductory Section -->
+    <section id="intro">
+        <p><strong>DYK?</strong> Nearly 1 in 5 people in the U.S. have a sexually transmitted infection (STI). However, STIs are not inevitable, and they can be prevented and treated. Make a plan and choose the prevention steps that work for you with Prepare Before You’re There. Take this brief, interactive quiz to get started.</p>
+        
+        <p>This quiz will help you know if you may be at risk for an STI. If you answer “yes” to any of the questions, you may want to talk with a healthcare provider to learn more about your risk and find out if you need to be tested for STIs.</p>
+        
+        <p>This quiz will not diagnose you with an infection. It also cannot predict if you will get one. It can help to determine if you are at risk for an STI.</p>
+        
+        <p><strong>CDC does not collect or store personal information from this quiz.</strong></p>
+    </section>
+    
+    <!-- Quiz Section -->
     <h1>Do You Need an STD Check?</h1>
     <form id="quiz-form">
         <p>1. Have you had vaginal (penis in the vagina), anal (penis in the anus), or oral sex (mouth on penis, vagina, or anus) without a condom in the past 12 months?</p>
-        <input type="radio" name="q1" value="yes"> Yes<br>
-        <input type="radio" name="q1" value="no"> No<br>
+        <input type="radio" name="q1" value="yes" id="q1-yes">
+        <label for="q1-yes">Yes</label><br>
+        <input type="radio" name="q1" value="no" id="q1-no">
+        <label for="q1-no">No</label><br>
 
         <p>2. Have you ever had an STI, including HIV?</p>
-        <input type="radio" name="q2" value="yes"> Yes<br>
-        <input type="radio" name="q2" value="no"> No<br>
+        <input type="radio" name="q2" value="yes" id="q2-yes">
+        <label for="q2-yes">Yes</label><br>
+        <input type="radio" name="q2" value="no" id="q2-no">
+        <label for="q2-no">No</label><br>
 
         <p>3. Have any of your partners had an STI?</p>
-        <input type="radio" name="q3" value="yes"> Yes<br>
-        <input type="radio" name="q3" value="no"> No<br>
+        <input type="radio" name="q3" value="yes" id="q3-yes">
+        <label for="q3-yes">Yes</label><br>
+        <input type="radio" name="q3" value="no" id="q3-no">
+        <label for="q3-no">No</label><br>
 
-        <p>4. Have you or any of your partners ever used illicit substances? </p>
-        <input type="radio" name="q4" value="yes"> Yes<br>
-        <input type="radio" name="q4" value="no"> No<br>
+        <p>4. Have you or any of your partners ever used illicit substances?</p>
+        <input type="radio" name="q4" value="yes" id="q4-yes">
+        <label for="q4-yes">Yes</label><br>
+        <input type="radio" name="q4" value="no" id="q4-no">
+        <label for="q4-no">No</label><br>
 
         <p>5. Have you exchanged sex for needs (money, housing, drugs, etc.) in the past 12 months?</p>
-        <input type="radio" name="q5" value="yes"> Yes<br>
-        <input type="radio" name="q5" value="no"> No<br>
+        <input type="radio" name="q5" value="yes" id="q5-yes">
+        <label for="q5-yes">Yes</label><br>
+        <input type="radio" name="q5" value="no" id="q5-no">
+        <label for="q5-no">No</label><br>
 
         <p>6. Is it possible that any of your sex partners in the past 12 months had sex with someone else while they were still in a sexual relationship with you?</p>
-        <input type="radio" name="q5" value="yes"> Yes<br>
-        <input type="radio" name="q5" value="no"> No<br>
+        <input type="radio" name="q6" value="yes" id="q6-yes">
+        <label for="q6-yes">Yes</label><br>
+        <input type="radio" name="q6" value="no" id="q6-no">
+        <label for="q6-no">No</label><br>
 
         <button type="button" onclick="calculateResults()">Submit</button>
     </form>
