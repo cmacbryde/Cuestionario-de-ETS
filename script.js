@@ -7,7 +7,7 @@ function calculateResults() {
     });
 
     const result = document.getElementById("result");
-    if (score >= 3) {
+    if (score >= 1) {
         result.innerHTML = "<p>Te recomendamos que te hagas la prueba de ETS. ¡Mantente seguro!</p>";
     } else {
         result.innerHTML = "<p>Es posible que no necesite hacerse pruebas, pero los chequeos regulares son una buena práctica.</p>";
