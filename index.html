@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STD Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Do You Need an STD Check?</h1>
+    <form id="quiz-form">
+        <p>1. Have you had unprotected sex recently?</p>
+        <input type="radio" name="q1" value="yes"> Yes<br>
+        <input type="radio" name="q1" value="no"> No<br>
+
+        <p>2. Do you have any unusual symptoms?</p>
+        <input type="radio" name="q2" value="yes"> Yes<br>
+        <input type="radio" name="q2" value="no"> No<br>
+
+        <p>3. Have you had multiple partners in the last 6 months?</p>
+        <input type="radio" name="q3" value="yes"> Yes<br>
+        <input type="radio" name="q3" value="no"> No<br>
+
+        <p>4. Has your partner tested positive for an STD?</p>
+        <input type="radio" name="q4" value="yes"> Yes<br>
+        <input type="radio" name="q4" value="no"> No<br>
+
+        <p>5. Are you unsure of your or your partner's status?</p>
+        <input type="radio" name="q5" value="yes"> Yes<br>
+        <input type="radio" name="q5" value="no"> No<br>
+
+        <button type="button" onclick="calculateResults()">Submit</button>
+    </form>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
