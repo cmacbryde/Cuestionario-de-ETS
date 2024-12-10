@@ -8,8 +8,9 @@ function calculateResults() {
 
     const result = document.getElementById("result");
     if (score >= 3) {
-        result.innerHTML = "<p>We recommend getting tested for STDs. Stay safe!</p>";
+        result.innerHTML = "<p>Te recomendamos que te hagas la prueba de ETS. ¡Mantente seguro!</p>";
     } else {
-        result.innerHTML = "<p>You may not need testing, but regular check-ups are good practice.</p>";
+        result.innerHTML = "<p>Es posible que no necesite hacerse pruebas, pero los chequeos regulares son una buena práctica.</p>";
     }
+    document.getElementById("congratulations").style.display = "block";
 }
