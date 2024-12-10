@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv='cache-control' content='no-cache'> 
-    <meta http-equiv='expires' content='0'> 
-    <meta http-equiv='pragma' content='no-cache'>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STD Quiz</title>
@@ -12,66 +9,52 @@
 <body>
     <!-- Introductory Section -->
     <section id="intro">
-        <p><strong>DYK?</strong> Nearly 1 in 5 people in the U.S. have a sexually transmitted infection (STI). However, STIs are not inevitable, and they can be prevented and treated. Make a plan and choose the prevention steps that work for you with Prepare Before You’re There. Take this brief, interactive quiz to get started.</p>
+        <p><strong>¿Lo sabías?</strong> Casi 1 de cada 5 personas en los EE. UU. tiene una infección de transmisión sexual (ITS). Sin embargo, las ITS no son inevitables, y se pueden prevenir y tratar. Haz un plan y elige los pasos de prevención que funcionen para ti con "Prepara antes de estar allí". Realiza este breve cuestionario interactivo para comenzar.</p>
         
-        <p>This quiz will help you know if you may be at risk for an STI. If you answer “yes” to any of the questions, you may want to talk with a healthcare provider to learn more about your risk and find out if you need to be tested for STIs.</p>
+        <p>Este cuestionario te ayudará a saber si puedes estar en riesgo de contraer una ITS. Si respondes “sí” a alguna de las preguntas, es posible que desees hablar con un proveedor de atención médica para aprender más sobre tu riesgo y saber si necesitas hacerte una prueba de ITS.</p>
         
-        <p>This quiz will not diagnose you with an infection. It also cannot predict if you will get one. It can help to determine if you are at risk for an STI.</p>
+        <p>Este cuestionario no te diagnosticará con una infección. Tampoco puede predecir si contraerás una. Puede ayudar a determinar si estás en riesgo de una ITS.</p>
         
-        <p><strong>CDC does not collect or store personal information from this quiz.</strong></p>
     </section>
-    
-    <!-- Quiz Section -->
-    <h1>Do You Need an STD Check?</h1>
+
+
+    <h1>¿Necesita una prueba de ETS?</h1>
     <form id="quiz-form">
-        <p>1. Have you had vaginal (penis in the vagina), anal (penis in the anus), or oral sex (mouth on penis, vagina, or anus) without a condom in the past 12 months?</p>
-        <input type="radio" name="q1" value="yes" id="q1-yes">
-        <label for="q1-yes">Yes</label><br>
-        <input type="radio" name="q1" value="no" id="q1-no">
-        <label for="q1-no">No</label><br>
+        <p>1. ¿Ha tenido sexo vaginal (pene en la vagina), anal (pene en el ano) u oral (boca en el pene, vagina o ano) sin condón en los últimos 12 meses?</p>
+        <input type="radio" name="q1" value="yes"> Yes<br>
+        <input type="radio" name="q1" value="no"> No<br>
 
-        <p>2. Have you ever had an STI, including HIV?</p>
-        <input type="radio" name="q2" value="yes" id="q2-yes">
-        <label for="q2-yes">Yes</label><br>
-        <input type="radio" name="q2" value="no" id="q2-no">
-        <label for="q2-no">No</label><br>
+        <p>2. ¿Alguna vez has tenido una ITS, incluido el VIH?</p>
+        <input type="radio" name="q2" value="yes"> Yes<br>
+        <input type="radio" name="q2" value="no"> No<br>
 
-        <p>3. Have any of your partners had an STI?</p>
-        <input type="radio" name="q3" value="yes" id="q3-yes">
-        <label for="q3-yes">Yes</label><br>
-        <input type="radio" name="q3" value="no" id="q3-no">
-        <label for="q3-no">No</label><br>
+        <p>3. ¿Alguna de tus parejas ha tenido una ITS?</p>
+        <input type="radio" name="q3" value="yes"> Yes<br>
+        <input type="radio" name="q3" value="no"> No<br>
 
-        <p>4. Have you or any of your partners ever used illicit substances?</p>
-        <input type="radio" name="q4" value="yes" id="q4-yes">
-        <label for="q4-yes">Yes</label><br>
-        <input type="radio" name="q4" value="no" id="q4-no">
-        <label for="q4-no">No</label><br>
+        <p>4. ¿Usted o alguna de sus parejas han consumido alguna vez sustancias ilícitas?</p>
+        <input type="radio" name="q4" value="yes"> Yes<br>
+        <input type="radio" name="q4" value="no"> No<br>
 
-        <p>5. Have you exchanged sex for needs (money, housing, drugs, etc.) in the past 12 months?</p>
-        <input type="radio" name="q5" value="yes" id="q5-yes">
-        <label for="q5-yes">Yes</label><br>
-        <input type="radio" name="q5" value="no" id="q5-no">
-        <label for="q5-no">No</label><br>
+        <p>5. ¿Has intercambiado sexo por necesidades (dinero, vivienda, drogas, etc.) en los últimos 12 meses?</p>
+        <input type="radio" name="q5" value="yes"> Yes<br>
+        <input type="radio" name="q5" value="no"> No<br>
 
-        <p>6. Is it possible that any of your sex partners in the past 12 months had sex with someone else while they were still in a sexual relationship with you?</p>
-        <input type="radio" name="q6" value="yes" id="q6-yes">
-        <label for="q6-yes">Yes</label><br>
-        <input type="radio" name="q6" value="no" id="q6-no">
-        <label for="q6-no">No</label><br>
+        <p>6. ¿Es posible que alguna de sus parejas sexuales en los últimos 12 meses haya tenido relaciones sexuales con otra persona mientras todavía estaban en una relación sexual con usted?</p>
+        <input type="radio" name="q6" value="yes"> Yes<br>
+        <input type="radio" name="q6" value="no"> No<br>
 
         <button type="button" onclick="calculateResults()">Submit</button>
     </form>
-
-    <!-- Results Section -->
     <div id="result"></div>
 
     <!-- Congratulations Section -->
     <section id="congratulations" style="display: none;">
-        <h2>CONGRATULATIONS!</h2>
-        <p>You’ve completed the quiz.</p>
-        <p>Answering “yes” to one or more of the quiz questions means you may be at risk for an STI. It also means you may want to talk with a healthcare provider to determine what tests you need (if any).</p>
-        <p>“Game Plan” resources on the next page can help you learn how to lower your risk for getting STIs. You can find and take the prevention steps that work for you. This information can help you learn how to stay healthy even if you answered “no” or “I don’t know” to the quiz questions.</p>
+        <h2>¡FELICIDADES!</h2>
+        <p>Has completado el cuestionario.</p>
+        <p>Responder "sí" a una o más de las preguntas del cuestionario significa que puede estar en riesgo de contraer una ITS. También significa que es posible que desee hablar con un proveedor de atención médica para determinar qué pruebas necesita (si las necesita).</p>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
