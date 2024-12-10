@@ -70,28 +70,5 @@
         <p>Answering “yes” to one or more of the quiz questions means you may be at risk for an STI. It also means you may want to talk with a healthcare provider to determine what tests you need (if any).</p>
         <p>“Game Plan” resources on the next page can help you learn how to lower your risk for getting STIs. You can find and take the prevention steps that work for you. This information can help you learn how to stay healthy even if you answered “no” or “I don’t know” to the quiz questions.</p>
     </section>
-
-    <script>
-        function calculateResults() {
-            const answers = document.querySelectorAll('input[type="radio"]:checked');
-            let score = 0;
-
-            answers.forEach(answer => {
-                if (answer.value === "yes") score++;
-            });
-
-            const result = document.getElementById("result");
-            const congratulations = document.getElementById("congratulations");
-
-            if (score > 0) {
-                result.innerHTML = "<p>We recommend getting tested for STDs. Stay safe!</p>";
-            } else {
-                result.innerHTML = "<p>You may not need testing, but regular check-ups are good practice.</p>";
-            }
-
-            // Display the congratulations section
-            congratulations.style.display = "block";
-        }
-    </script>
 </body>
 </html>
